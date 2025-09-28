@@ -16,4 +16,8 @@ public class User {
     private String bio;
     private Set<String> followers;
     private Set<String> following;
+
+    public Set<String> getFollowing() {
+        return following;
+    }
 }

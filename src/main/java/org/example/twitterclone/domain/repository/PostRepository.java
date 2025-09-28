@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.Collection;
 import java.util.List;
 
-interface PostRepository extends MongoRepository<Post, String> {
+public interface PostRepository extends MongoRepository<Post, String> {
     List<Post> findAllByUserIdInOrderByTimestamp(List<String> userIds);
     List<Post> findAllByUserIdOrderByTimestamp(String userId);
 }
